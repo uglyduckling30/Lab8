@@ -12,12 +12,6 @@ import java.util.ArrayList;
 
 public class CustomListTest {
 
-  public int getCount(){
-    return cities.size();
-}
-  public void addCity(City city){
-    cities.add(city);
-}
 
   private CustomList list;
 /**
@@ -36,12 +30,10 @@ return list;
 plus one
 */
 @Test
-public void addCityT est(){
+public void addCityTest(){
 list = MockCityList();
 int listSize = list.getCount();
-list.addCity(new City("Estevan"
-,
-"SK"));
+list.addCity(new City("Estevan", "SK"));
 assertEquals(list.getCount(),listSize + 1);
 }
 
