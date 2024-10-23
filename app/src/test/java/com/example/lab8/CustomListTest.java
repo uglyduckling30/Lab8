@@ -62,4 +62,16 @@ public void deleteCityTest(){
   });
 }
 
+@Test
+public void countCitiesTest(){
+  list = MockCityList();
+  assertEquals(1, list.countCities());
+  City city = new City("Regina", "Saskatchewan");
+  list.add(city);
+  assertEquals(2, list.countCities());
+
+}
+
+
+
 }
