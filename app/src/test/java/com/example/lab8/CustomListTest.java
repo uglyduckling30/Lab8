@@ -16,6 +16,7 @@ public class CustomListTest {
     return cities.size();
 }
   public void addCity(City city){
+    cities.add(city);
 }
 
   private CustomList list;
