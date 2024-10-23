@@ -65,10 +65,11 @@ public void deleteCityTest(){
 @Test
 public void countCitiesTest(){
   list = MockCityList();
+  list.addCity(new City("Estevan", "SK"));
   assertEquals(1, list.countCities());
-  City city = new City("Regina", "Saskatchewan");
-  list.add(city);
+  list.addCity(new City("Edmonton", "AB"));
   assertEquals(2, list.countCities());
+
 
 }
 
